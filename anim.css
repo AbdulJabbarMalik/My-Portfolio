@@ -1,0 +1,50 @@
+@keyframes slide {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+.edu-pera h2 {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+}
+
+.about h1 {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+}
+
+/* for card */
+@keyframes rotate{
+    from{
+        transform: rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wave{
+
+   20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+}
