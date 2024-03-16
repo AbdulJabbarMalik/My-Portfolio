@@ -11,7 +11,8 @@ body {
     background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
     scroll-behavior: smooth;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -30,6 +31,7 @@ html{
     font-family: Tlight;
     src: url(./Assets/Font/Titillium_Web/TitilliumWeb-Light.ttf);
 }
+
 @font-face {
     font-family: gaberito;
     src: url(./assets/Font/Gabarito/Gabarito-VariableFont_wght.ttf);
@@ -43,6 +45,7 @@ html{
     position: fixed;
     top: 0;
     z-index: 1000;
+    box-shadow: 2px 2px 5px white;
 }
 
 label.logo {
@@ -54,6 +57,7 @@ label.logo {
     font-family: gaberito;
     text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
+
 /* label.logo1 {
     color: rgb(255, 255, 255);
     font-size: 35px;
@@ -116,7 +120,7 @@ label.logo {
 .sec1 {
     height: 100vh;
     margin-top: 80px;
-   
+
 }
 
 .about {
@@ -143,7 +147,7 @@ label.logo {
 
 .about h1 {
     color: rgb(255, 255, 255);
-    text-shadow: 4px 4px 4px black;      
+    text-shadow: 4px 4px 4px black;
     font-family: gaberito;
     font-size: 65px;
     padding-left: 20px;
@@ -276,17 +280,19 @@ label.logo {
     margin: 90px 0 90px 0;
     padding: 15px 0 20px 0;
 
-   
-    
+
+
 }
-.heading::after{
+
+.heading::after {
     content: '';
     position: absolute;
-    background: linear-gradient(40deg,#6a6ee6,#c01b47,#625d3b);
+    background: linear-gradient(40deg, #6a6ee6, #c01b47, #625d3b);
     inset: 0;
     z-index: -1;
     transform: skewY(5deg);
 }
+
 .heading h1 {
     color: rgb(255, 255, 255);
     font-family: gaberito;
@@ -295,13 +301,14 @@ label.logo {
     cursor: pointer;
 
 }
-.heading:hover h1{
+
+.heading:hover h1 {
     animation: wave 1s linear;
 }
 
 .heading span {
     color: #e3e9ea;
-   
+
 }
 
 
@@ -334,7 +341,7 @@ label.logo {
     margin: 20px;
     padding: 12px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
@@ -349,7 +356,7 @@ label.logo {
     color: rgb(34, 193, 195);
     text-shadow: 4px 4px 2px rgb(7, 85, 116);
     z-index: 2;
-  
+
 
 
 
@@ -386,8 +393,9 @@ label.logo {
 }
 
 .sec3 {
-  
-    width: 100%;;
+
+    width: 100%;
+    ;
     background: #0d154d;
 }
 
@@ -398,13 +406,14 @@ label.logo {
     margin-top: 90px;
     /* padding-left: 30px; */
     width: 100%;
-    padding: 30px 0 30px 0 ;
-    background: linear-gradient(40deg,#6a6ee6,#c01b47,#625d3b);
+    padding: 30px 0 30px 0;
+    background: linear-gradient(40deg, #6a6ee6, #c01b47, #625d3b);
     display: flex;
     justify-content: center;
     align-items: center;
     isolation: isolate;
 }
+
 /* .pro-heading::after {
 
     content: '';
@@ -440,10 +449,11 @@ label.logo {
     gap: 50px;
     padding-top: 90px;
     padding-bottom: 90px;
-    align-content: center;;
+    align-content: center;
+    ;
     width: 100%;
-   
-    
+
+
 }
 
 .p-card p {
@@ -457,11 +467,12 @@ label.logo {
 .p-card span {
 
     font-family: spicey;
-    color: rgb(30, 38, 175);
+    color: rgb(250, 251, 255);
     font-weight: bold;
     font-size: 30px;
 
 }
+
 .p-card {
     position: relative;
     display: flex;
@@ -475,7 +486,15 @@ label.logo {
     width: 270px;
     height: 290px;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
+    /* From https://css.glass */
+    background: linear-gradient(40deg, #6a6ee6, #c01b47, #625d3b);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
     padding: 40px;
     cursor: pointer;
     transition: 0.5s;
@@ -504,43 +523,47 @@ label.logo {
     box-shadow: 0 0 0 10px #0d154d;
     transform: translateY(0);
 }
-.p-card .imge::before{
+
+.p-card .imge::before {
     content: "";
     position: absolute;
     width: 20px;
     height: 20px;
-    background:transparent;
+    background: transparent;
     left: -30px;
     border-top-right-radius: 15px;
     transform: translateY(-100px);
     opacity: 0;
-    box-shadow: 5px -5px 0 4px  #0d154d ;
+    box-shadow: 5px -5px 0 4px #0d154d;
     pointer-events: none;
     transition: 0.5s;
 }
-.p-card:hover .imge::before{
+
+.p-card:hover .imge::before {
     opacity: 1;
     transform: translateY(50px);
 }
 
-.p-card .imge::after{
+.p-card .imge::after {
     content: "";
     position: absolute;
     width: 20px;
     height: 20px;
-    background:transparent;
+    background: transparent;
     right: -30px;
     border-top-left-radius: 15px;
     transform: translateY(-100px);
     opacity: 0;
-    box-shadow: -5px -5px 0 4px  #0d154d ;
+    box-shadow: -5px -5px 0 4px #0d154d;
     pointer-events: none;
     transition: 0.5s;
 }
-.p-card:hover .imge::after{
+
+.p-card:hover .imge::after {
     opacity: 1;
     transform: translateY(50px);
 }
+
 .p-card .imge img {
     position: absolute;
     top: 0;
@@ -551,7 +574,9 @@ label.logo {
     border-radius: 15px;
 
 }
-.p-card span,.p-card p{
+
+.p-card span,
+.p-card p {
     position: relative;
     text-align: center;
     opacity: 0;
@@ -562,19 +587,23 @@ label.logo {
 
 }
 
-.p-card:hover span, .p-card:hover p{
+.p-card:hover span,
+.p-card:hover p {
     opacity: 1;
     visibility: visible;
     transform: translateY(40px);
 }
+.view{
+    background-color: red;
+}
 
-.p-card button{
+.p-card button {
     position: absolute;
-    bottom: 8px;
+    bottom: 20px;
     transition: 0.5s;
     width: 35%;
     height: 33px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: gaberito;
     font-weight: bolder;
     font-size: larger;
@@ -583,8 +612,9 @@ label.logo {
     cursor: pointer;
 
 }
-.p-card:hover button{
-    
+
+.p-card:hover button {
+
     background-color: #e31515;
     bottom: -25px;
     box-shadow: 0 0 0 10px #0d154d;
