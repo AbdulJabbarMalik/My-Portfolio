@@ -20,7 +20,7 @@
     }
 }
 
-@media(max-width:940px) {
+@media(max-width:1010px) {
 
 
     .checkbtn {
@@ -84,3 +84,14 @@
 
 
 }
+/* @media (max-width:454px){
+
+    
+    label.logo1{
+        display: block;
+    }
+    label.logo{
+        display: none;
+    }
+   
+} */

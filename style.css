@@ -30,6 +30,10 @@ html{
     font-family: Tlight;
     src: url(./Assets/Font/Titillium_Web/TitilliumWeb-Light.ttf);
 }
+@font-face {
+    font-family: gaberito;
+    src: url(./assets/Font/Gabarito/Gabarito-VariableFont_wght.ttf);
+}
 
 .navbar {
     background: rgb(0, 0, 0);
@@ -45,11 +49,21 @@ label.logo {
     color: rgb(255, 255, 255);
     font-size: 35px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 20px;
     font-weight: bold;
-    font-family: spicey;
+    font-family: gaberito;
     text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
+/* label.logo1 {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+    font-family: gaberito;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    display: none;
+} */
 
 .navbar ul {
     float: right;
@@ -67,7 +81,8 @@ label.logo {
     color: white;
     font-size: 17px;
     text-transform: uppercase;
-    font-family: spicey;
+    font-family: gaberito;
+    font-weight: bolder;
     border-radius: 5px;
     padding: 7px 13px;
 
@@ -129,7 +144,7 @@ label.logo {
 .about h1 {
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px 4px black;      
-    font-family: spicey;
+    font-family: gaberito;
     font-size: 65px;
     padding-left: 20px;
     cursor: pointer;
@@ -140,7 +155,7 @@ label.logo {
 .about p {
 
     padding-left: 20px;
-    font-family: spicey;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 
 }
@@ -163,7 +178,7 @@ label.logo {
     color: #10129e;
     cursor: pointer;
     display: flex;
-    font-family: spicey;
+    font-family: gaberito;
     font-size: 26px;
     font-weight: bolder;
     height: 48px;
@@ -259,7 +274,7 @@ label.logo {
     height: 100px;
     text-align: center;
     margin: 90px 0 90px 0;
-    padding: 10px 0 10px 0;
+    padding: 15px 0 20px 0;
 
    
     
@@ -274,7 +289,7 @@ label.logo {
 }
 .heading h1 {
     color: rgb(255, 255, 255);
-    font-family: spicey;
+    font-family: gaberito;
     font-weight: bolder;
     font-size: 60px;
     cursor: pointer;
@@ -328,7 +343,7 @@ label.logo {
 }
 
 .card span {
-    font-family: spicey;
+    font-family: gaberito;
     font-size: xx-large;
     font-weight: bolder;
     color: rgb(34, 193, 195);
@@ -341,10 +356,10 @@ label.logo {
 }
 
 .card p {
-    font-family: spicey;
-    font-weight: bold;
+    font-family: gaberito;
+    font-weight: lighter;
     color: rgb(255, 255, 255);
-    font-size: 23px;
+    font-size: 20px;
     z-index: 2;
 }
 
@@ -405,7 +420,7 @@ label.logo {
 
 .pro-heading h1 {
     color: white;
-    font-family: spicey;
+    font-family: gaberito;
     font-weight: bolder;
     font-size: 50px;
     /* border-bottom: 5px solid #eeebeb; */
@@ -560,7 +575,7 @@ label.logo {
     width: 35%;
     height: 33px;
     color: white;
-    font-family: spicey;
+    font-family: gaberito;
     font-weight: bolder;
     font-size: larger;
     border-radius: 10px;
