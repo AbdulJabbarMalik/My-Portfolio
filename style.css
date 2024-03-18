@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #2234ae;
-    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+    /* background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%); */
     scroll-behavior: smooth;
 }
 
@@ -38,14 +38,14 @@ html {
 }
 
 .navbar {
-    background: rgb(0, 0, 0);
-    border-bottom: 2px solid #081699;
+    background: #0e1f34;
+    border-bottom: 2px solid #F7C232;
     height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
-    box-shadow: 2px 2px 5px white;
+    box-shadow: 2px 2px 5px #F7C232;
 }
 
 label.logo {
@@ -120,6 +120,8 @@ label.logo {
 .sec1 {
     height: 100vh;
     margin-top: 80px;
+    background:#102234;
+    isolation: isolate;
 
 }
 
@@ -138,11 +140,11 @@ label.logo {
 
 .inf {
     width: 60%;
-    border-left: 3px solid #081699;
+    border-left: 3px solid #F7C232;
 }
 
 .inf span {
-    color: #1f30c4;
+    color: #F7C232;
 }
 
 .about h1 {
@@ -179,7 +181,7 @@ label.logo {
     border: 2px solid #111;
     border-radius: 8px;
     box-sizing: border-box;
-    color: #10129e;
+    color: #000000;
     cursor: pointer;
     display: flex;
     font-family: gaberito;
@@ -196,13 +198,12 @@ label.logo {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-
 }
 
 
 
 .btn:after {
-    background-color: #081699;
+    background-color:#F7C232;
     border-radius: 8px;
     content: "";
     display: block;
@@ -213,7 +214,7 @@ label.logo {
     top: -2px;
     transform: translate(8px, 8px);
     transition: transform .2s ease-out;
-    z-index: -1;
+    z-index:-1 ;
 }
 
 .btn:hover:after {
@@ -237,20 +238,23 @@ label.logo {
 }
 
 .myimg img {
-    width: 250px;
-    border-radius: 100%;
-    box-shadow: 2px 2px 4px rgb(16, 37, 195);
+    width: 290px;
     transition: 1s;
+    object-fit: cover;
+    transform: scale(1.3);
+    
 }
 
 .myimg {
-    border: 4px solid rgb(229, 237, 237);
+    /* border: 4px solid rgb(229, 237, 237); */
     overflow: hidden;
-    border-radius: 100%;
+    border-radius:43% 57% 71% 29% / 17% 40% 60% 83% ; 
+    background-color: #F7C232;
+   
 }
 
 .myimg img:hover {
-    transform: scale(1.2) rotate(7deg);
+    transform: scale(1.4) rotate(7deg);
     transition: .5s;
     filter: grayscale(.2);
     cursor: pointer;
@@ -261,6 +265,9 @@ label.logo {
 
     display: flex;
     align-items: center;
+    background-color: #102234;
+    padding-bottom: 90px;
+
 }
 
 .skills {
@@ -279,6 +286,7 @@ label.logo {
     text-align: center;
     margin: 90px 0 90px 0;
     padding: 15px 0 20px 0;
+    isolation: isolate;
 
 
 
@@ -287,7 +295,7 @@ label.logo {
 .heading::after {
     content: '';
     position: absolute;
-    background: linear-gradient(40deg, #6a6ee6, #c01b47, #625d3b);
+    background: #F7C232;
     inset: 0;
     z-index: -1;
     transform: skewY(5deg);
@@ -353,8 +361,8 @@ label.logo {
     font-family: gaberito;
     font-size: xx-large;
     font-weight: bolder;
-    color: rgb(34, 193, 195);
-    text-shadow: 4px 4px 2px rgb(7, 85, 116);
+    color: #F7C232;
+    text-shadow: 4px 4px 30px  #F7C232 ;
     z-index: 2;
 
 
@@ -375,7 +383,7 @@ label.logo {
     position: absolute;
     width: 170px;
     height: 140%;
-    background: linear-gradient(#840606, #0d098c);
+    background: linear-gradient(#F7C232,#F7C232);
     animation: rotate 4s linear infinite;
 
 }
@@ -383,7 +391,8 @@ label.logo {
 .card::after {
     content: "";
     position: absolute;
-    background: #0a1538;
+    background:#0e1f34;
+    border-radius: 15px;
     inset: 5px;
 }
 
@@ -395,19 +404,19 @@ label.logo {
 .sec3 {
 
     width: 100%;
-    ;
-    background: #0d154d;
+    background:#F7C232;
+   
 }
 
 .pro-heading {
     /* border: 1px solid white; */
     position: relative;
     text-align: center;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     /* padding-left: 30px; */
     width: 100%;
     padding: 30px 0 30px 0;
-    background: linear-gradient(40deg, #6a6ee6, #c01b47, #625d3b);
+    background:#F7C232;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,7 +437,7 @@ label.logo {
 } */
 
 .pro-heading h1 {
-    color: white;
+    color: rgb(7, 7, 7);
     font-family: gaberito;
     font-weight: bolder;
     font-size: 50px;
@@ -439,6 +448,37 @@ label.logo {
 
 .head {
     width: 50%;
+    height: 100%;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left:7px solid #102234 ;
+   
+    
+    
+}
+.head::after{
+    content: '';
+    position: absolute;
+    background-color:#102234;
+    inset: 0;
+    width: 100%;
+    height: 90%;
+    top: 20px;
+    left: 5px;
+    z-index: -1;
+    transform: translate(8px,8px);
+    border-radius: 10px;
+    transition: 0.2s ;
+}
+.pro-heading:hover .head:after{
+    transform: translate(0,0);
+    top: 0px;
+    left: 0px;
+    transition: 0.2s ;
 }
 
 .pro-cards {
@@ -450,7 +490,6 @@ label.logo {
     padding-top: 90px;
     padding-bottom: 90px;
     align-content: center;
-    ;
     width: 100%;
 
 
@@ -458,7 +497,7 @@ label.logo {
 
 .p-card p {
     font-family: spicey;
-    color: rgb(1, 1, 1);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
 
@@ -467,7 +506,7 @@ label.logo {
 .p-card span {
 
     font-family: spicey;
-    color: rgb(250, 251, 255);
+    color:#F7C232 ;
     font-weight: bold;
     font-size: 30px;
 
@@ -490,7 +529,7 @@ label.logo {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); */
     /* From https://css.glass */
-    background: linear-gradient(40deg, #6a6ee6, #c01b47, #625d3b);
+    background:#102234;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.9px);
@@ -498,7 +537,7 @@ label.logo {
     padding: 40px;
     cursor: pointer;
     transition: 0.5s;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 4px 4px 5px #102234;
 }
 
 /* .p-card:hover {
@@ -520,7 +559,7 @@ label.logo {
 
 .p-card:hover .imge {
     inset: -50px 50px 250px 50px;
-    box-shadow: 0 0 0 10px #0d154d;
+    box-shadow: 0 0 0 10px #F7C232;
     transform: translateY(0);
 }
 
@@ -534,7 +573,7 @@ label.logo {
     border-top-right-radius: 15px;
     transform: translateY(-100px);
     opacity: 0;
-    box-shadow: 5px -5px 0 4px #0d154d;
+    box-shadow: 5px -5px 0 4px #F7C232;
     pointer-events: none;
     transition: 0.5s;
 }
@@ -554,7 +593,7 @@ label.logo {
     border-top-left-radius: 15px;
     transform: translateY(-100px);
     opacity: 0;
-    box-shadow: -5px -5px 0 4px #0d154d;
+    box-shadow: -5px -5px 0 4px #F7C232;
     pointer-events: none;
     transition: 0.5s;
 }
@@ -594,7 +633,7 @@ label.logo {
     transform: translateY(40px);
 }
 .view{
-    background-color: red;
+    background-color: white;
 }
 
 .p-card button {
@@ -603,7 +642,7 @@ label.logo {
     transition: 0.5s;
     width: 35%;
     height: 33px;
-    color: rgb(255, 255, 255);
+    color: rgb(7, 7, 7);
     font-family: gaberito;
     font-weight: bolder;
     font-size: larger;
@@ -615,8 +654,8 @@ label.logo {
 
 .p-card:hover button {
 
-    background-color: #e31515;
+    background-color:white;
     bottom: -25px;
-    box-shadow: 0 0 0 10px #0d154d;
+    box-shadow: 0 0 0 10px #F7C232;
 
 }
