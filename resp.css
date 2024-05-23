@@ -66,10 +66,13 @@
     #check:checked~ul {
         left: 0;
     }
+    .container4 {
+        flex-direction: column;
+    }
 
 }
-
-@media (max-width:624px) {
+/* 627 */
+@media (max-width:971px) {
     .inf h1 {
         font-size: 40px;
     }
@@ -81,8 +84,99 @@
     label.logo {
         font-size: 22px;
     }
+    .myimg{
+
+        width: 240px;
+    }
+    .shadow {
+        width: 240px;
+    }
 
 
+}
+@media (max-width:609px) {
+
+    .inf h1 {
+        font-size: 30px;
+    }
+
+    .inf p {
+        font-size: 13px;
+    }
+    .type-txt h2, .type-txt span{
+
+        font-size: 1.5em;
+    }
+    .inf {
+        width: 90%;
+    }
+    
+    
+}
+@media (max-width: 431px){
+    .about {
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    /* .shadow::before {
+        display: none;
+    } */
+    .shadow {
+    
+      margin-left: 50px;
+    }
+    .about {
+        flex-direction: column-reverse;
+        /* justify-content: center; */
+        height: 70%;
+        gap: 70px;
+
+       
+    }
+
+}
+@media (min-width: 768px) {
+    .btn {
+        padding: 0 40px;
+    }
+}
+@media (max-width:609px) {
+
+    .btn{
+        border-radius: 50%;
+        background:transparent;
+        border: 2px solid #F7C232;
+        color: #F7C232;
+    }
+    .btn::before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:#F7C232;
+        border-radius: 50%;
+        bottom: -55px;
+        filter: blur(60px);
+    }
+    .btn:active{
+        background: #F7C232;
+        color: #0d145a;
+        box-shadow: 2px 2px 20px -2px #F7C232,-2px -2px 20px -2px  #F7C232;
+    }
+    .btn::after{
+        display: none;
+    }
+}
+
+@media (max-width: 697px){
+    .pro-heading h2, .ser-heading h2 {
+
+        font-size: 1.5em;
+    }
+    .head, .ser-head {
+    
+        padding: 10px 0;
+    }
 }
 /* @media (max-width:454px){
 

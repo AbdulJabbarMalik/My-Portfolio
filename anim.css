@@ -1,6 +1,6 @@
 @keyframes slide {
     from {
-        transform: translateX(-300px);
+        transform: translateX(-400px);
     }
 
     to {
@@ -8,13 +8,23 @@
     }
 
 }
+@keyframes slide2 {
+    from {
+        transform: translateX(400px);
+    }
 
-.edu-pera h2 {
+    to {
+        transform: translateX(0px);
+    }
+
+}
+
+/* .edu-pera h2 {
     animation-name: slide;
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-delay: 0s;
-}
+} */
 
 .about h1 {
     animation-name: slide;
@@ -47,4 +57,15 @@
     90%{
         transform: translateY(-4px);
     }
+}
+@keyframes type {
+
+    40% , 60% {
+        left: 100%;
+    }
+
+    100%{
+        left: 0%;
+    }
+   
 }
