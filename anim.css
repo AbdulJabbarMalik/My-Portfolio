@@ -1,4 +1,4 @@
-@keyframes slide {
+/* @keyframes slide {
     from {
         transform: translateX(-400px);
     }
@@ -17,7 +17,7 @@
         transform: translateX(0px);
     }
 
-}
+} */
 
 /* .edu-pera h2 {
     animation-name: slide;
@@ -26,12 +26,12 @@
     animation-delay: 0s;
 } */
 
-.about h1 {
+/* .about h1 {
     animation-name: slide;
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-delay: 0s;
-}
+} */
 
 /* for card */
 @keyframes rotate{
@@ -46,16 +46,16 @@
 @keyframes wave{
 
    20%,50%,80%,to{
-        transform: translateY(0);
+        transform: translateY(0) skewY(5deg);
     }
     40%{
-        transform: translateY(-30px);
+        transform: translateY(-30px) skewY(5deg);
     }
     70%{
-        transform: translateY(-15px);
+        transform: translateY(-15px) skewY(5deg);
     }
     90%{
-        transform: translateY(-4px);
+        transform: translateY(-4px) skewY(5deg);
     }
 }
 @keyframes type {

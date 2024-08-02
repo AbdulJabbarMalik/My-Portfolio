@@ -189,3 +189,18 @@
     }
    
 } */
+
+@media (max-width: 1333px) {
+
+    .inpt1 {
+       max-width: 300px;
+       min-width: 300px;
+       /* width: 100%; */
+    }
+}
+@media (max-width: 1250px) {
+
+    .sec5 {
+        background: #F7C232;
+    }
+}
